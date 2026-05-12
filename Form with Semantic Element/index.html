@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Picnic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>School Picnic Registration Form</h1>
+        <p>Fill the form to join the school picnic</p>
+    </header>
+
+    
+    <main>
+
+        <section>
+
+            <form>
+
+                <fieldset>
+                    <legend>Student Details</legend>
+
+                    <label for="name">Student Name:</label><br>
+                    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob"><br><br>
+
+                    <label for="class">Class:</label><br>
+                    <select id="class">
+                        <option>Select Class</option>
+                        <option>8th</option>
+                        <option>9th</option>
+                        <option>10th</option>
+                        <option>11th</option>
+                        <option>12th</option>
+                    </select><br><br>
+
+                    <label>Gender:</label><br>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female<br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone"><br><br>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Picnic Information</legend>
+
+                    <label for="place">Preferred Picnic Place:</label><br>
+                    <input type="text" id="place"><br><br>
+
+                    <label for="pickup">Bus Pickup Point:</label><br>
+                    <select id="pickup">
+                        <option>Select Area</option>
+                        <option>Navrangpura</option>
+                        <option>Maninagar</option>
+                        <option>Satellite</option>
+                        <option>Bopal</option>
+                        <option>Gota</option>
+                        <option>Chandkheda</option>
+                        <option>Naranpura</option>
+                        <option>Vastrapur</option>
+                        <option>Thaltej</option>
+                        <option>Sabarmati</option>
+                        <option>Nikol</option>
+                        <option>Vastral</option>
+                        <option>Paldi</option>
+                        <option>CG Road</option>
+                    </select><br><br>
+
+                    <label for="message">Special Notes:</label><br>
+                    <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+                    <input type="checkbox" id="agree">
+                    <label for="agree">
+                        I agree to follow school rules during the picnic.
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </section>
+
+    </main>
+
+   
+    <footer>
+        <p>School Picnic Form 2026</p>
+    </footer>
+
+</body>
+
+</html>
