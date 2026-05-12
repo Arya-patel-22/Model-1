@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Simple Form</title>
+    <link rel="stylesheet" href="css_for_student_form.css">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
         <input type="text" placeholder="Enter your name"><br><br>
 
         <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"><br><br>
+        <input type="email" placeholder="Enter your email"><br><br> 
 
         <label>Password:</label><br>
         <input type="password" placeholder="Enter password"><br><br>
@@ -25,7 +26,7 @@
         <input type="tel" placeholder="Enter phone number"><br><br>
 
         <label>Age:</label><br>
-        <input type="number" placeholder="Enter age"><br><br>
+        <input type="hidden" placeholder="Enter age"><br><br>
 
         <label>Gender:</label><br>
         <input type="radio" name="gender"> Male
@@ -35,6 +36,13 @@
         <input type="checkbox"> Reading
         <input type="checkbox"> Sports
         <input type="checkbox"> Music<br><br>
+
+        <label>Study Hours Per Day:</label>
+
+        <input type="range" min="0" max="15" value="5"
+        oninput="result.value=this.value"> 
+        <output name="result">5</output>
+        <br><br>
 
         <input type="submit" value="Submit">
 
