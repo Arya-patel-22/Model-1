@@ -5,67 +5,117 @@
 
     <title>House Finder</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </head>
 
 <body>
 
-    <h1>Welcome to House Finder</h1>
-    <header>
-        <h1>Dream House</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Buy</a>
-                <a href="#">Rent</a>
-                <a href="#">Contact</a>
-            </nav>
-    </header>
+    <div id="header"></div>
 
-    <form>
+    <h1>Welcome to House Finder</h1>
+
+    <form action="result.html">
+
         <h2>Find Your House</h2>
 
-        <form action="home.html"></form>
-
         <label>City:</label>
-        <select>
+
+        <select required>
+
+            <option value="">Select City</option>
+
             <option>Ahmedabad</option>
+
             <option>Surat</option>
+
             <option>Vadodara</option>
+
             <option>Rajkot</option>
-            <option>Mehasana</option>
+
+            <option>Mehsana</option>
+
         </select>
+
+        <br><br>
 
         <label>Area:</label>
-        <select>
+
+        <select required>
+
+            <option value="">Select Area</option>
+
             <option>Vaishnodevi</option>
+
             <option>Gota</option>
+
             <option>Sindhubhavan</option>
-            <option>Bhopal</option>
+
+            <option>Bopal</option>
+
         </select>
+
         <br><br>
 
         <label>Property Type:</label>
-        <input type="radio" name="type"> Rent
+
+        <input type="radio" name="type" required> Rent
+
         <input type="radio" name="type"> Buy
+
         <br><br>
 
         <label>BHK:</label>
-        <select>
+
+        <select required>
+
+            <option value="">Select BHK</option>
+
             <option>2 BHK</option>
+
             <option>3 BHK</option>
+
             <option>4 BHK</option>
+
             <option>5 BHK</option>
+
         </select>
+
         <br><br>
 
         <label for="budget">Budget:</label>
-        <input type="range" id="budget" min="3000000" max="30000000" value="5000000" 
+
+        <input type="range"
+               id="budget"
+               min="3000000"
+               max="30000000"
+               value="5000000"
+               step="100000"
                oninput="output.value = budget.value">
+
         <output id="output">5000000</output>
+
         <br><br>
 
         <button type="submit">Search</button>
 
     </form>
+
+    <div id="footer"></div>
+
+    <script>
+
+    $(function(){
+
+        $("#header").load("header.html");
+
+        $("#footer").load("footer.html");
+
+    });
+
+    </script>
 
 </body>
 
