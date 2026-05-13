@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>House Finder</title>
+
+</head>
+
+<body>
+
+    <h1>Welcome to House Finder</h1>
+    <header>
+        <h1>Dream House</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Buy</a>
+                <a href="#">Rent</a>
+                <a href="#">Contact</a>
+            </nav>
+    </header>
+
+    <form>
+        <h2>Find Your House</h2>
+
+        <form action="home.html"></form>
+
+        <label>City:</label>
+        <select>
+            <option>Ahmedabad</option>
+            <option>Surat</option>
+            <option>Vadodara</option>
+            <option>Rajkot</option>
+            <option>Mehasana</option>
+        </select>
+
+        <label>Area:</label>
+        <select>
+            <option>Vaishnodevi</option>
+            <option>Gota</option>
+            <option>Sindhubhavan</option>
+            <option>Bhopal</option>
+        </select>
+        <br><br>
+
+        <label>Property Type:</label>
+        <input type="radio" name="type"> Rent
+        <input type="radio" name="type"> Buy
+        <br><br>
+
+        <label>BHK:</label>
+        <select>
+            <option>2 BHK</option>
+            <option>3 BHK</option>
+            <option>4 BHK</option>
+            <option>5 BHK</option>
+        </select>
+        <br><br>
+
+        <label for="budget">Budget:</label>
+        <input type="range" id="budget" min="3000000" max="30000000" value="5000000" 
+               oninput="output.value = budget.value">
+        <output id="output">5000000</output>
+        <br><br>
+
+        <button type="submit">Search</button>
+
+    </form>
+
+</body>
+
+</html>
