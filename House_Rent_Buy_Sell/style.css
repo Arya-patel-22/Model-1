@@ -615,3 +615,47 @@ body {
     }
 
 }
+
+.sell-page{
+    width: 100%;
+    min-height: 100%;
+    background-color:#f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-form{
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+.form-group input,
+.form-group select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border: 2px solid #5f00d9;
+}
