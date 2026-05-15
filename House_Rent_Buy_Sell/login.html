@@ -1,0 +1,32 @@
+﻿    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Dream House</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <main class="login-page">
+            <form action="home.html" method="get" class="login-form">
+                <h1>Login</h1>
+                <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+                <input type="password" name="password" placeholder="123Abcd" required><br><br>
+                <input type="tel" name="phone" placeholder="1234567890"><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </main>
+
+        <div id="footer"></div>
+
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </body>
+    </html>

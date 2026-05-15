@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy House</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="buy-page">
+
+        <div class="buy-box">
+
+            <h1>Find Your Dream House</h1>
+
+            <form action="result.html">
+
+
+                <label>Select House Type</label>
+
+                <select required>
+
+                    <option value="">Choose BHK</option>
+
+                    <option>2 BHK</option>
+
+                    <option>3 BHK</option>
+
+                    <option>4 BHK</option>
+
+                    <option>5 BHK</option>
+
+                </select>
+
+                <label>Select Budget Range</label>
+
+                <select required>
+
+                    <option value="">Choose Budget</option>
+
+                    <option>₹ 20 Lakh - ₹ 40 Lakh</option>
+
+                    <option>₹ 40 Lakh - ₹ 60 Lakh</option>
+
+                    <option>₹ 60 Lakh - ₹ 1 Crore</option>
+
+                    <option>Above ₹ 1 Crore</option>
+
+                </select>
+
+
+                 <label>City</label>
+
+                <select required>
+
+                    <option value="">Choose City</option>
+
+                    <option>Surat</option>
+
+                    <option>Ahmedabad</option>
+
+                    <option>Vadodara</option>
+
+                    <option>Mehasana</option>
+
+                </select>
+
+                <lable>Construction Status</lable>
+
+                <select required>
+                    
+                    <option value="">Choose Status</option>
+
+                    <option>Under Construction</option>
+
+                    <option>Ready To Move</option>
+
+                </select>
+
+                <button type="submit">Search</button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+
+        $(function(){
+
+            $("#header").load("header.html");
+
+            $("#footer").load("footer.html");
+
+        });
+
+    </script>
+
+</body>
+</html>
