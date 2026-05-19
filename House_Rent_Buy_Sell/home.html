@@ -26,15 +26,48 @@
 
     <div id="header"></div>
 
+    <!-- FILTER -->
+
+    <div class="filter-box">
+
+        <select id="typeFilter">
+
+            <option value="all">All Houses</option>
+
+            <option value="apartment">Apartment</option>
+
+            <option value="villa">Villa</option>
+
+            <option value="bungalow">Bungalow</option>
+
+        </select>
+
+    </div>
+
+    <!-- SLIDER -->
+
     <div id="houseSlider" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
 
-            <button type="button" data-bs-target="#houseSlider" data-bs-slide-to="0" class="active"></button>
+            <button
+            type="button"
+            data-bs-target="#houseSlider"
+            data-bs-slide-to="0"
+            class="active">
+            </button>
 
-            <button type="button" data-bs-target="#houseSlider" data-bs-slide-to="1"></button>
+            <button
+            type="button"
+            data-bs-target="#houseSlider"
+            data-bs-slide-to="1">
+            </button>
 
-            <button type="button" data-bs-target="#houseSlider" data-bs-slide-to="2"></button>
+            <button
+            type="button"
+            data-bs-target="#houseSlider"
+            data-bs-slide-to="2">
+            </button>
 
         </div>
 
@@ -42,31 +75,48 @@
 
             <div class="carousel-item active">
 
-                <img src="images/Magnate_lifestyle.jpeg" class="d-block w-100 slider-img" alt="House">
+                <img
+                src="images/Appartment.jpg"
+                class="d-block w-100 slider-img"
+                alt="House">
 
             </div>
 
             <div class="carousel-item">
 
-                <img src="images/Dev.jpeg" class="d-block w-100 slider-img" alt="House">
+                <img
+                src="images/Villa.jpg"
+                class="d-block w-100 slider-img"
+                alt="House">
 
             </div>
 
             <div class="carousel-item">
 
-                <img src="images/Gaala_heven.jpeg" class="d-block w-100 slider-img" alt="House">
+                <img
+                src="images/Bungalow.jpeg"
+                class="d-block w-100 slider-img"
+                alt="House">
 
             </div>
 
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#houseSlider" data-bs-slide="prev">
+        <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#houseSlider"
+        data-bs-slide="prev">
 
             <span class="carousel-control-prev-icon"></span>
 
         </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#houseSlider" data-bs-slide="next">
+        <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#houseSlider"
+        data-bs-slide="next">
 
             <span class="carousel-control-next-icon"></span>
 
@@ -74,25 +124,32 @@
 
     </div>
 
+    <!-- HOUSE SECTION -->
+
     <section class="house-section">
 
         <h1>Available Houses</h1>
 
         <div class="house-container">
 
-            <div class="house-card">
+            <!-- HOUSE 1 -->
+
+            <div class="house-card apartment">
 
                 <img src="images/Magnate_lifestyle.jpeg" alt="House">
 
                 <div class="house-details">
 
-                    <h2>Magnate lifestyle</h2>
+                    <h2>Magnate Lifestyle</h2>
 
                     <p class="price">₹ 85,00,000</p>
 
                     <p>Ahmedabad, Gujarat</p>
 
-                    <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9876543210
+                    </p>
 
                     <button
                     type="button"
@@ -108,19 +165,24 @@
 
             </div>
 
-            <div class="house-card">
+            <!-- HOUSE 2 -->
+
+            <div class="house-card Appartment">
 
                 <img src="images/Dev.jpeg" alt="House">
 
                 <div class="house-details">
 
-                    <h2>Dev parijat</h2>
+                    <h2>Dev Parijat</h2>
 
                     <p class="price">₹ 60,00,000</p>
 
                     <p>Satellite, Ahmedabad</p>
 
-                    <p><i class="fa-solid fa-phone"></i> +91 9988776655</p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
 
                     <button
                     type="button"
@@ -136,19 +198,24 @@
 
             </div>
 
-            <div class="house-card">
+            <!-- HOUSE 3 -->
+
+            <div class="house-card Appartment">
 
                 <img src="images/Gaala_heven.jpeg" alt="House">
 
                 <div class="house-details">
 
-                    <h2>Gaala heven</h2>
+                    <h2>Gaala Heaven</h2>
 
                     <p class="price">₹ 76,00,000</p>
 
                     <p>Gota, Ahmedabad</p>
 
-                    <p><i class="fa-solid fa-phone"></i> +91 9090909090</p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9090909090
+                    </p>
 
                     <button
                     type="button"
@@ -164,19 +231,55 @@
 
             </div>
 
-            <div class="house-card">
+                <div class="house-card Appartment">
+
+                <img src="images/Gaala_heven.jpeg" alt="House">
+
+                <div class="house-details">
+
+                    <h2>Amreli, Ahmedabad</h2>
+
+                    <p class="price">₹ 76,00,000</p>
+
+                    <p>Gota, Ahmedabad</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9090909090
+                    </p>
+
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#houseModal">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- HOUSE 4 -->
+
+            <div class="house-card Appartment">
 
                 <img src="images/Wind_park.jpeg" alt="House">
 
                 <div class="house-details">
 
-                    <h2>Wind park</h2>
+                    <h2>Wind Park</h2>
 
                     <p class="price">₹ 2,00,00,000</p>
 
                     <p>Satellite, Ahmedabad</p>
 
-                    <p><i class="fa-solid fa-phone"></i> +91 9988776655</p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
 
                     <button
                     type="button"
@@ -192,19 +295,149 @@
 
             </div>
 
-            <div class="house-card">
+                <div class="house-card villa">
+
+                <img src="images/Villa.jpg" alt="House">
+
+                <div class="house-details">
+
+                    <h2>Water lily</h2>
+
+                    <p class="price">₹ 16,00,00,000</p>
+
+                    <p>Vaishnodevi, Ahmedabad</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
+
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#houseModal">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+                <div class="house-card bungalow">
+
+                <img src="images/Bungalow.jpeg" alt="House">
+
+                <div class="house-details">
+
+                    <h2>Antliya</h2>
+
+                    <p class="price">₹ 1,00,00,000</p>
+
+                    <p>Sabarmati, Ahmedabad</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
+
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#houseModal">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+                <div class="house-card  Appartment">
+
+                <img src="images/Appartment.jpg" alt="House">
+
+                <div class="house-details">
+
+                    <h2>Parijat</h2>
+
+                    <p class="price">₹ 90,00,000</p>
+
+                    <p>Gota, Ahmedabad</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
+
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#houseModal">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            
+            <div class="house-card Appartment">
+
+                <img src="images/Gaala_heven.jpeg" alt="House">
+
+                <div class="house-details">
+
+                    <h2>Raj Mahal</h2>
+
+                    <p class="price">₹ 76,00,000</p>
+
+                    <p>Gota, Ahmedabad</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9090909090
+                    </p>
+
+                    <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#houseModal">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- HOUSE 5 -->
+
+            <div class="house-card apartment">
 
                 <img src="images/Magnate_lavish.jpeg" alt="House">
 
                 <div class="house-details">
 
-                    <h2>Magnate lavish</h2>
+                    <h2>Magnate Lavish</h2>
 
                     <p class="price">₹ 66,00,000</p>
 
                     <p>Satellite, Ahmedabad</p>
 
-                    <p><i class="fa-solid fa-phone"></i> +91 9988776655</p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 9988776655
+                    </p>
 
                     <button
                     type="button"
@@ -224,43 +457,59 @@
 
     </section>
 
+    <!-- FAQ -->
+
     <section class="faq-section">
 
-    <h1>Frequently Asked Questions</h1>
+        <h1>Frequently Asked Questions</h1>
 
-    <div class="faq-box">
+        <div class="faq-box">
 
-        <h3>How can I contact the owner?</h3>
+            <h3>How can I contact the owner?</h3>
 
-        <p>
-            You can call the phone number shown on the property card.
-        </p>
+            <p>
+                You can call the phone number shown on the property card.
+            </p>
 
-    </div>
+        </div>
 
-    <div class="faq-box">
+        <div class="faq-box">
 
-        <h3>Can I buy property without registration?</h3>
+            <h3>Can I buy property without registration?</h3>
 
-        <p>
-            No, proper legal registration is required for buying property.
-        </p>
+            <p>
+                No, proper legal registration is required.
+            </p>
 
-    </div>
+        </div>
 
-    <div class="faq-box">
+        <div class="faq-box">
 
-        <h3>Can I list my property on this website?</h3>
+            <h3>Can I list my property on this website?</h3>
 
-        <p>
-            Yes, you can add your property using the Sell page.
-        </p>
+            <p>
+                Yes, you can add your property using the Sell page.
+            </p>
 
-    </div>
+        </div>
 
-</section>
+    </section>
+
+        <div id="houses">
+        <p>2BHK Apartment</p>
+        </div>
+
+        <button id="addHouse">Add House</button>
+
+        <input type="text" id="city" value="Ahmedabad">
+
+        <button id="changeCity">Change City</button>
+
+    <!-- FOOTER -->
 
     <div id="footer"></div>
+
+    <!-- MODAL -->
 
     <div class="modal fade" id="houseModal">
 
@@ -296,11 +545,17 @@
 
     </div>
 
+    
+
+    <!-- SCROLL TOP BUTTON -->
+
     <button id="topBtn">
 
-    <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up"></i>
 
     </button>
+
+    <!-- JAVASCRIPT -->
 
     <script>
 
@@ -312,11 +567,16 @@
 
         });
 
+        // SCROLL TO TOP
+
         let topButton = document.getElementById("topBtn");
 
         window.onscroll = function () {
 
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            if (
+                document.body.scrollTop > 200 ||
+                document.documentElement.scrollTop > 200
+            ) {
 
                 topButton.style.display = "block";
 
@@ -342,7 +602,54 @@
 
         };
 
-        </script>
+        // FILTER
+
+        const filter = document.getElementById("typeFilter");
+
+        filter.addEventListener("change", function () {
+
+            const selected = filter.value;
+
+            const houses = document.querySelectorAll(".house-card");
+
+            houses.forEach(function (house) {
+
+                if (selected === "all") {
+
+                    house.style.display = "block";
+
+                }
+
+                else if (house.classList.contains(selected)) {
+
+                    house.style.display = "block";
+
+                }
+
+                else {
+
+                    house.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+
+        $("#addHouse").click(function(){
+
+        $("#houses").append("<p>3BHK Villa</p>");
+
+        });
+
+        $("#changeCity").click(function(){
+
+        $("#city").val("Surat");
+
+        });
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 

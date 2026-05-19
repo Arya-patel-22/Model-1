@@ -715,3 +715,20 @@ body {
     margin-bottom: 10px;
     color: #0d6efd;
 }
+
+.filter-box{
+    margin: 20px;
+    text-align: center;
+}
+
+.filter-box select{
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.house-card{
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+}
