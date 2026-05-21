@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: rgb(4, 4, 4);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.App-header{
+  background-color: #0b2543;
+  color: white;
+  padding: 20px;
+}
+
+.App-header nav{
+  margin-top: 10px;
+}
+
+.App-header a{
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.App-header a:hover{
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+  flex: 1;
+  padding: 30px;
+}
+
+/* FOOTER */
+
+.App-footer{
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+/* BUTTONS */
+
+button{
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #092648;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #357ab8;
+}
+
+/* INPUT */
+
+input{
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+}

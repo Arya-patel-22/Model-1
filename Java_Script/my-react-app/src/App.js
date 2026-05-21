@@ -1,0 +1,53 @@
+﻿import './App.css';
+import Header, { Greet } from './Header';
+import Footer from './Footer';
+import Counter from './Counter';
+import About from './About';
+
+import { useState } from 'react';
+
+function App() {
+
+  const [name, setName] = useState("");
+  const [page, setPage] = useState("home");
+
+  return (
+    <div className="App">
+
+      <Header setPage={setPage} />
+
+      <main className="main-content">
+
+        {page === "home" && (
+          <div>
+
+            <h1>Arya from SOU</h1>
+
+            <Greet name="Arya" />
+
+            <Counter />
+
+            <input
+              type="text"
+              placeholder="Enter your name"
+              onChange={(e) => setName(e.target.value)}
+            />
+
+            <h1>Welcome {name}</h1>
+
+          </div>
+        )}
+
+        {page === "about" && (
+          <About />
+        )}
+
+      </main>
+
+      <Footer />
+
+    </div>
+  );
+}
+
+export default App;
