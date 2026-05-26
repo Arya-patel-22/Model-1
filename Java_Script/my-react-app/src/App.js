@@ -4,13 +4,14 @@ import Footer from './Footer';
 import Counter from './Counter';
 import About from './About';
 import Signup from "./SignUp";
-
 import { useState } from 'react';
+import Recipes from './recipes';
 
 function App() {
 
   const [name, setName] = useState("");
   const [page, setPage] = useState("home");
+  const [showRecipes, setShowRecipes] = useState(false);
 
   return (
     <div className="App">
@@ -27,6 +28,12 @@ function App() {
             <Greet name="Arya" />
 
             <Counter />
+
+            <button onClick={() => setShowRecipes(true)}>
+              Get Recipes
+            </button>
+
+            {showRecipes && <Recipes />}
 
             <input
               type="text"
