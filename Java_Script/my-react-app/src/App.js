@@ -3,6 +3,7 @@ import Header, { Greet } from './Header';
 import Footer from './Footer';
 import Counter from './Counter';
 import About from './About';
+import Signup from "./SignUp";
 
 import { useState } from 'react';
 
@@ -34,6 +35,9 @@ function App() {
             />
 
             <h1>Welcome {name}</h1>
+
+            {/* Signup Component */}
+            <Signup />
 
           </div>
         )}
