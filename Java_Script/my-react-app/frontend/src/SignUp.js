@@ -8,9 +8,8 @@ function Signup() {
     password: ""
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({}); 
 
-  // Handle input change
   const handleChange = (event) => {
     setFormData({
       ...formData,
@@ -18,17 +17,14 @@ function Signup() {
     });
   };
 
-  // Validation
   const validate = () => {
 
     let newErrors = {};
 
-    // Name validation
     if (formData.name === "") {
       newErrors.name = "Name is required";
     }
 
-    // Email validation
     if (formData.email === "") {
       newErrors.email = "Email is required";
     }
@@ -36,7 +32,6 @@ function Signup() {
       newErrors.email = "Enter valid email";
     }
 
-    // Password validation
     if (formData.password === "") {
       newErrors.password = "Password is required";
     }
@@ -46,27 +41,44 @@ function Signup() {
 
     return newErrors;
   };
-
-  // Form submit
-  const handleSubmit = (event) => {
-
+     
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const validationErrors = validate();
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+      return;
     }
-    else {
-      alert("Signup Successful");
+
+    const userData = {
+      name: formData.name,
+      email: formData.email,
+      password: formData.password
+    };
+
+    try {
+      const response = await fetch("http://localhost:5000/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userData)
+      });
+
+      const data = await response.json();
+      alert(data.message || "Signup Successful");
 
       setErrors({});
-
       setFormData({
         name: "",
         email: "",
         password: ""
       });
+    } catch (error) {
+      console.error(error);
+      alert("Signup failed. Please try again.");
     }
   };
 
