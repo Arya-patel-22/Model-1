@@ -1,0 +1,262 @@
+/* Admin Panel Component Styles */
+.admin-container {
+  min-height: calc(100vh - 200px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.admin-header h1 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.add-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.message {
+  background-color: #d4edda;
+  border-left: 4px solid #28a745;
+  color: #155724;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Form Section */
+.admin-form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  border-left: 4px solid #667eea;
+}
+
+.admin-form-section h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 25px 0;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Table Section */
+.internships-table {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.internships-table h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.internships-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.internships-table thead {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+
+.internships-table th {
+  padding: 15px;
+  text-align: left;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.internships-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+.internships-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.edit-button {
+  background-color: #667eea;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 20px 15px;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .admin-header h1 {
+    font-size: 22px;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .admin-form-section,
+  .internships-table {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .internships-table {
+    overflow-x: auto;
+  }
+
+  .internships-table table {
+    min-width: 600px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+  }
+}

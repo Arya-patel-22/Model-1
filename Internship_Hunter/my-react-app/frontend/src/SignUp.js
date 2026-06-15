@@ -5,7 +5,12 @@ function Signup() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: ""
+    password: "",
+    collegeName: "",
+    skills: "",
+    preferredDomain: "",
+    preferredLocation: "",
+    resumeLink: ""
   });
 
   const [errors, setErrors] = useState({}); 
@@ -55,11 +60,16 @@ function Signup() {
     const userData = {
       name: formData.name,
       email: formData.email,
-      password: formData.password
+      password: formData.password,
+      collegeName: formData.collegeName,
+      skills: formData.skills,
+      preferredDomain: formData.preferredDomain,
+      preferredLocation: formData.preferredLocation,
+      resumeLink: formData.resumeLink
     };
 
     try {
-      const response = await fetch("http://localhost:5000/signup", {
+      const response = await fetch("http://localhost:5000/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -74,7 +84,12 @@ function Signup() {
       setFormData({
         name: "",
         email: "",
-        password: ""
+        password: "",
+        collegeName: "",
+        skills: "",
+        preferredDomain: "",
+        preferredLocation: "",
+        resumeLink: ""
       });
     } catch (error) {
       console.error(error);
@@ -84,7 +99,7 @@ function Signup() {
 
   return (
     <div>
-      <h2>Signup Form</h2>
+      <h2>Student Registration</h2>
 
       <form onSubmit={handleSubmit}>
 
@@ -137,6 +152,66 @@ function Signup() {
           <p style={{ color: "red" }}>
             {errors.password}
           </p>
+        </div>
+
+        <div>
+          <label>College Name:</label>
+          <br />
+
+          <input
+            type="text"
+            name="collegeName"
+            value={formData.collegeName}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <label>Skills (comma separated):</label>
+          <br />
+
+          <input
+            type="text"
+            name="skills"
+            value={formData.skills}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <label>Preferred Domain:</label>
+          <br />
+
+          <input
+            type="text"
+            name="preferredDomain"
+            value={formData.preferredDomain}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <label>Preferred Location:</label>
+          <br />
+
+          <input
+            type="text"
+            name="preferredLocation"
+            value={formData.preferredLocation}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <label>Resume Link (optional):</label>
+          <br />
+
+          <input
+            type="text"
+            name="resumeLink"
+            value={formData.resumeLink}
+            onChange={handleChange}
+          />
         </div>
 
         <button type="submit">
